@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>统计文本的行数</title>
+	<meta charset="UTF-8">
+	<style type="text/css">
+		body{
+			background-color: #ccc;
+			background-image: url(../img/mainbg.jpg);
+			background-size: 120%;
+		}
+		.tablebox{
+			/* background-color: #00f; */
+			width: 700px;
+			height: 50px;
+			margin-left: 300px;
+			margin-top: 60px;
+		}
+	</style>
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.8.1.min.js"></script>
+</head>
+<body>
+	<div class="tablebox">
+		<form action="/WordCountAnalysis/wordcount/wcanalysis?cmd=countRowNumber" method="post">
+			<table width="80%">
+			<tr>
+				<td>确认--统计文本中的行数?</td>
+				<td></td>
+				<td><input type="submit" value="确定"></td>
+			</tr>
+			<tr>
+				<td>注：本次查询统计基于功能选项1</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td><a href="right.html"  target="main">>>返回首页</a></td>
+			</tr>	
+			
+		</table>
+		</form>
+	</div>
+</body>
+</html>
